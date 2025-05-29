@@ -10,7 +10,7 @@ function TaskInput({ input, setInput, addTask }) {
       />
       <button
         onClick={addTask}
-        className="bg-indigo-600 text-white px-5 py-3 rounded-r-lg hover:bg-indigo-700 transition font-semibold"
+        className="bg-green-600 text-white px-5 py-3 rounded-r-lg hover:bg-green-700 transition font-semibold"
       >
         ➕ Add
       </button>

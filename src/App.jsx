@@ -35,16 +35,16 @@ function App() {
   const remaining = tasks.filter((task) => !task.completed).length;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-600 via-indigo-500 to-blue-500 flex items-center justify-center p-4">
-      <div className="bg-white p-6 rounded-2xl shadow-2xl w-full max-w-md transition-all">
-        <h1 className="text-3xl font-extrabold text-center text-indigo-800 mb-6 tracking-wide">
+    <div className="min-h-screen bg-gradient-to-br from-green-600 via-green-500 to-emerald-500 flex items-center justify-center p-4">
+      <div className="bg-white p-8 rounded-2xl shadow-2xl w-full max-w-xl transition-all">
+        <h1 className="text-3xl font-extrabold text-center text-green-800 mb-6 tracking-wide">
           ✨ Task Manager
         </h1>
 
         <TaskInput input={input} setInput={setInput} addTask={addTask} />
 
         <div className="flex items-center justify-between text-sm text-gray-600 mb-3">
-          <span>🧠 {remaining} task{remaining !== 1 ? 's' : ''} remaining</span>
+          <span>{remaining} task{remaining !== 1 ? 's' : ''} remaining</span>
           <span className="text-xs text-gray-400">Saved automatically</span>
         </div>
 
